@@ -265,7 +265,8 @@ figure {
 }
 
 form {
-    margin: 0;
+   direction:rtl; 
+   margin: 0;
 }
 
 fieldset {
