@@ -1,0 +1,10 @@
+/*
+Theme Name: Sv-blue
+Author: Seraj Vahdati
+Author URI: http://svahdati.com
+Version: 1.2
+Description: Svahdati Theme wordpress version.
+*/
+@import "../svahdati-style/blue/style.css";
+@import "../svahdati-style/prettyPhoto.css";
+@import "../svahdati-style/media.css";

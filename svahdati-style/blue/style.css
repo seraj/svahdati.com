@@ -1,0 +1,1370 @@
+@import url("reset.css");
+
+/* =============================================================================
+   Structure Styles
+   ========================================================================== */
+@font-face {
+    font-family: 'BFarnaz';
+    src: url('../fonts/BFarnaz.eot?#') format('eot'),
+        /* IE6â€“8 */
+        url('../fonts/BFarnaz.woff') format('woff'),
+        /* FF3.6+, IE9, Chrome6+, Saf5.1+*/
+        url('../fonts/BFarnaz.ttf') format('truetype');
+    /* Saf3â€”5, Chrome4+, FF3.5, Opera 10+ */
+}
+
+@font-face {
+    font-family: '"BYekan"';
+    src: url("../fonts/Yekan.woff?-japrgs") format("woff");
+    font-weight: normal;
+    font-style: normal;
+}
+
+h2,
+h4 {
+    font-family: '"BYekan"';
+    font-weight: normal;
+}
+
+body {
+    margin: 0;
+    font-size: 1em;
+    line-height: 1.4;
+    font-family: '"BYekan"', 'Open Sans', sans-serif;
+    background-image: url('img/bg-border.jpg'), url('img/bg-border.jpg'), url('img/bg.png');
+    background-position: left, right, 0px 0px;
+    background-attachment: fixed;
+    background-repeat: repeat-y, repeat-y, no-repeat;
+    padding: 10px 30px 10px 30px;
+    direction: rtl;
+}
+
+#wrapper {
+    width: 970px;
+    margin: auto;
+}
+
+.m10 {
+    margin-top: 10px;
+}
+
+.m30 {
+    margin-top: 30px;
+}
+
+.m60 {
+    margin-top: 60px;
+}
+
+.m90 {
+    margin-top: 90px;
+}
+
+.div-content {
+    float: left;
+    width: 100%;
+}
+
+.div-content h4 {
+    margin-top: 25px;
+}
+
+.div-content .page-desc {
+    text-align: justify;
+    font-family: '"BYekan"';
+}
+
+.p-arrow {
+    float: left;
+    width: 100%;
+    padding-top: 80px;
+}
+
+.a-arrow {
+    opacity: 0.3;
+    z-index: -99;
+    height: 65px;
+    font-size: 12px;
+    font-family: '"BYekan"';
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+    display: block;
+    width: 100px;
+    margin: auto;
+
+    color: #0083ce !important;
+    transition: opacity 0.3s ease-in-out;
+    -moz-transition: opacity 0.3s ease-in-out;
+    -webkit-transition: opacity 0.3s ease-in-out;
+    -o-transition: opacity 0.3s ease-in-out;
+}
+
+.a-arrow:hover {
+    opacity: 1;
+    text-decoration: none;
+}
+
+.a-arrow:hover img {
+    margin-top: 5px;
+}
+
+.a-arrow img {
+    transition: margin-top 0.3s ease-in-out;
+    -moz-transition: margin-top 0.3s ease-in-out;
+    -webkit-transition: margin-top 0.3s ease-in-out;
+    -o-transition: margin-top 0.3s ease-in-out;
+}
+
+.div-content-row {
+    float: left;
+    width: 100%;
+}
+
+.switcher {
+    position: fixed;
+    right: -60px;
+    top: 190px;
+
+    transition: right 0.3s ease-in-out;
+    -moz-transition: right 0.3s ease-in-out;
+    -webkit-transition: right 0.3s ease-in-out;
+    -o-transition: right 0.3s ease-in-out;
+}
+
+.switcher ul {
+    float: right;
+    width: 50px;
+    padding: 5px;
+    background-color: #1d1d1d;
+}
+
+.switcher ul li {
+    margin-bottom: 3px;
+}
+
+.switcher ul li a {
+    display: block;
+    width: 100%;
+    height: 25px;
+    float: right;
+    opacity: 0.7;
+    margin-bottom: 5px;
+    transition: opacity 0.3s ease-in-out;
+    -moz-transition: opacity 0.3s ease-in-out;
+    -webkit-transition: opacity 0.3s ease-in-out;
+    -o-transition: opacity 0.3s ease-in-out;
+}
+
+.switcher ul li a:hover {
+    opacity: 1;
+}
+
+.switcher ul li .red {
+    background-color: #E73527;
+}
+
+.switcher ul li .blue {
+    background-color: #0083CE;
+}
+
+.switcher ul li .green {
+    background-color: #3B9B00;
+}
+
+.switcher ul li .violet {
+    background-color: #B2008A;
+}
+
+
+
+.switcher div {
+    float: left;
+    padding: 3px;
+    background-color: #1d1d1d;
+    cursor: pointer;
+}
+
+.switcher div img {
+    width: 25px;
+}
+
+
+/* =============================================================================
+   Structure Styles
+   ========================================================================== */
+
+
+
+
+
+/* =============================================================================
+   Header Styles
+   ========================================================================== */
+
+header {
+    position: fixed;
+    background-color: White;
+    padding: 20px 0px 0px 0px;
+    margin-top: -10px;
+    width: 970px;
+    z-index: 9999;
+    border-bottom: 1px solid #e1e1e1;
+}
+
+header .div-logo {
+    float: left;
+    height: 50px;
+    margin-top: 10px;
+}
+
+header .div-mainmenu {
+    float: right;
+}
+
+header .div-mainmenu ul {
+    float: right;
+    list-style-type: none;
+    -webkit-margin-before: 0;
+    -webkit-margin-after: 0;
+    -webkit-margin-start: 0px;
+    margin: 0;
+    padding: 0;
+    -webkit-margin-end: 0px;
+    -webkit-padding-start: 0px;
+    margin-top: 20px;
+}
+
+header .div-mainmenu ul li {
+    float: right;
+    margin-right: 20px;
+    height: 50px;
+}
+
+header .div-mainmenu ul li a {
+    color: #0083ce;
+    font-family: '"BYekan"';
+    text-decoration: none;
+    padding: 0 10px 0 10px;
+    height: 100%;
+    display: block;
+}
+
+header .div-mainmenu ul li a:hover {
+    border-bottom: 1px solid #0083ce;
+}
+
+header .div-mainmenu ul li a.current {
+    border-bottom: 1px solid #0083ce;
+    font-weight: 550;
+}
+
+
+#nav ul {
+    _margin: 0;
+    /*IE6 only*/
+    opacity: 0;
+    visibility: hidden;
+    position: absolute;
+    width: 150px;
+    top: 69px;
+    right: 821px;
+    z-index: 1;
+    font-family: '"BYekan"';
+    background: white;
+    border: 1px solid #e1e1e1;
+    transition: opacity 0.3s ease-in-out;
+    -moz-transition: opacity 0.3s ease-in-out;
+    -webkit-transition: opacity 0.3s ease-in-out;
+    -o-transition: opacity 0.3s ease-in-out;
+}
+
+
+
+#nav ul li {
+    width: 100%;
+    float: left;
+    height: 25px;
+    text-align: right;
+    padding-top: 5px;
+    border-bottom: 1px solid #E1E1E1;
+}
+
+#nav ul li:hover a {
+    border-bottom: 0;
+}
+
+#nav ul li a {
+    text-decoration: none;
+}
+
+#nav ul li a:hover {
+    text-decoration: none !important;
+    font-weight: 600;
+}
+
+
+
+#nav .li-drop:hover>ul {
+    opacity: 1;
+    visibility: visible;
+    margin: 0;
+}
+
+/* =============================================================================
+   Header Styles
+   ========================================================================== */
+
+
+
+
+/* =============================================================================
+   Home Styles
+   ========================================================================== */
+#home {
+    padding-top: 60px;
+}
+
+#home .welcome-text {
+    width: 625px;
+    margin: auto;
+    text-align: center;
+    padding-top: 135px;
+}
+
+#home .welcome-text .row-1 {
+    font-weight: 900;
+    font-size: 150px;
+    letter-spacing: -15px;
+    line-height: 1;
+    border-bottom: 7px solid #0083ce;
+}
+
+#home .welcome-text .row-2 {
+    text-transform: capitalize;
+    font-weight: 900;
+    font-size: 75px;
+    letter-spacing: -5px;
+    line-height: 1;
+    margin-bottom: 10px;
+    text-align: left;
+}
+
+#home .welcome-text .row-2 span {
+    color: #0083ce;
+}
+
+#home .welcome-text .row-3 {
+    text-transform: uppercase;
+    font-weight: 900;
+    font-size: 25px;
+    letter-spacing: 0px;
+    line-height: 1;
+    text-align: center;
+}
+
+#home .welcome-text .row-3 span {
+    color: #0083ce;
+}
+
+#home .welcome-text .row-5 {
+    text-transform: uppercase;
+    font-weight: 900;
+    font-size: 25px;
+    letter-spacing: 0px;
+    line-height: 1;
+    text-align: center;
+    margin-top: 20px;
+}
+
+#home .welcome-text .row-6 {
+    text-transform: uppercase;
+    font-weight: 900;
+    letter-spacing: -1px;
+    line-height: 1;
+    text-align: center;
+    margin-top: -10px;
+}
+
+#home .welcome-text .row-6 a {
+    color: #0083ce;
+    font-size: 60px;
+    text-decoration: none;
+}
+
+#home .welcome-text .row-6 a span {
+    font-size: 30px;
+}
+
+/* =============================================================================
+   Home Styles
+   ========================================================================== */
+
+
+
+
+/* =============================================================================
+   About Styles
+   ========================================================================== */
+#about.div-content {
+    margin-top: 500px;
+}
+
+#about h5,
+#about h4 {
+    margin-top: 5px;
+    font-family: '"BYekan"';
+}
+
+#about .div-content-row .div-profile {
+    width: 42%;
+    float: right;
+    padding-top: 15px;
+}
+
+#about .div-content-row .div-profile img {
+    float: right;
+    border: 2px solid White;
+    -webkit-box-shadow: 0px 0px 1px #333333;
+    -moz-box-shadow: 0px 0px 1px #333333;
+    box-shadow: 0px 0px 1px #333333;
+    margin-left: 1px;
+}
+
+#about .div-content-row .div-sublinks {
+    float: right;
+    padding-right: 31px;
+    background-image: url('img/social-arrows.png'), url('img/social-arrows2.png');
+    background-repeat: no-repeat, no-repeat;
+    background-position: right, left;
+    width: 170px;
+}
+
+#about .div-content-row .div-sublinks p {
+    font-weight: 900;
+    text-transform: uppercase;
+    font-family: '"BYekan"';
+}
+
+#about .div-content-row .div-sublinks p.big {
+    font-size: 12px;
+}
+
+#about .div-content-row .div-sublinks p.small {
+    font-size: 8px;
+    font-weight: bold;
+}
+
+#about .div-content-row .div-sublinks ul {
+    list-style-type: none;
+    float: right;
+    margin: 0;
+    padding: 5px 0 0 0;
+    width: 165px;
+}
+
+#about .div-content-row .div-sublinks ul li {
+    float: right;
+    margin-left: 2px;
+}
+
+#about .div-content-row .div-sublinks ul li .btn {
+    display: block;
+    height: 32px;
+    width: 32px;
+    background-image: url('img/social-sprite.png');
+    transition: opacity 0.3s ease-in-out;
+    -moz-transition: opacity 0.3s ease-in-out;
+    -webkit-transition: opacity 0.3s ease-in-out;
+    -o-transition: opacity 0.3s ease-in-out;
+}
+
+#about .div-content-row .div-sublinks ul li .btn:hover {
+    opacity: 0.7;
+}
+
+#about .div-content-row .div-sublinks ul li .fb {
+    background-position: 0px;
+}
+
+#about .div-content-row .div-sublinks ul li .twt {
+    background-position: -33px;
+}
+
+#about .div-content-row .div-sublinks ul li .lkdin {
+    background-position: -66px;
+}
+
+#about .div-content-row .div-sublinks ul li .drbble {
+    background-position: -99px;
+}
+
+#about .div-content-row .div-sublinks ul li .cv {
+    background-position: -133px;
+}
+
+#about .div-content-row .div-profile-text {
+    width: 58%;
+    float: left;
+    padding-top: 15px;
+    line-height: 1.5;
+}
+
+#about .div-content-row .div-profile-text p {
+    padding-right: 15px;
+    border-right: 1px solid #0083ce;
+    font-family: '"BYekan"', tahoma;
+    text-align: right;
+}
+
+#about .div-content-row {}
+
+#about .div-content-row .div-work {
+    float: right;
+    width: 40%;
+    margin-left: 20px;
+}
+
+#about .div-content-row .div-work h2 {
+    font-weight: 900;
+    text-transform: uppercase;
+    font-size: 14px;
+    color: #0083ce;
+}
+
+#about .div-content-row .div-work ul {}
+
+#about .div-content-row .div-work ul li {
+    margin-bottom: 15px;
+    float: left;
+    width: 100%;
+}
+
+#about .div-content-row .div-work ul li .job {
+    font-weight: 900;
+    display: block;
+    float: right;
+    width: 50%;
+}
+
+#about .div-content-row .div-work ul li .time {
+    font-weight: 400;
+    display: block;
+    float: left;
+    padding: 1px 5px 1px 5px;
+    background-color: #0083ce;
+    color: White;
+    font-size: 11px;
+}
+
+#about .div-content-row .div-work ul li .desc {
+    font-weight: 400;
+    margin-top: -5px;
+    padding: 0px 0px 8px 0px;
+    font-style: italic;
+    display: block;
+    float: left;
+    width: 100%;
+}
+
+#about .div-content-row .div-work ul li p {
+    padding-right: 10px;
+    border-right: 1px solid #0083ce;
+    float: right;
+    font-family: '"BYekan"';
+    text-align: justify;
+}
+
+#about .div-content-row .div-skills {
+    float: right;
+    width: 28%;
+    margin-left: 20px;
+}
+
+#about .div-content-row .div-skills h2 {
+    font-weight: 900;
+    text-transform: uppercase;
+    font-size: 14px;
+    color: #0083ce;
+}
+
+#about .div-content-row .div-skills .ul-title {
+
+    float: right;
+    width: 100%;
+    font-family: '"BYekan"';
+}
+
+#about .div-content-row .div-skills ul {
+    float: right;
+    width: 100%;
+    padding-bottom: 10px;
+}
+
+#about .div-content-row .div-skills ul li {
+    width: 100%;
+    height: 20px;
+    float: right;
+    background-color: #e8e8e8;
+    margin: 2px 0px 2px 0px;
+}
+
+#about .div-content-row .div-skills ul li span {
+    text-indent: 1em;
+    display: block;
+    width: 50%;
+    height: 100%;
+    line-height: 2;
+    background-color: #0083ce;
+    color: White;
+    text-transform: uppercase;
+    font-size: 11px;
+}
+
+#about .div-content-row .div-education {
+    float: left;
+    width: 27%;
+}
+
+#about .div-content-row .div-education h2 {
+    font-weight: 900;
+    text-transform: uppercase;
+    font-size: 14px;
+    color: #0083ce;
+}
+
+#about .div-content-row .div-education ul {}
+
+#about .div-content-row .div-education ul li {
+    margin-bottom: 15px;
+    float: left;
+    width: 100%;
+}
+
+#about .div-content-row .div-education ul li .job {
+    font-weight: 900;
+    font-family: '"BYekan"';
+    display: block;
+    float: right;
+    width: 50%;
+}
+
+#about .div-content-row .div-education ul li .time {
+    font-weight: 400;
+    display: block;
+    float: left;
+    padding: 1px 5px 1px 5px;
+    background-color: #0083ce;
+    color: White;
+    font-size: 11px;
+}
+
+#about .div-content-row .div-education ul li .desc {
+    font-weight: 400;
+    margin-top: -1px;
+    padding: 0px 0px 8px 0px;
+    font-style: italic;
+    font-family: '"BYekan"';
+    display: block;
+    float: left;
+    width: 100%;
+}
+
+#about .div-content-row .div-education ul li p {
+    padding-right: 10px;
+    border-right: 1px solid #0083ce;
+    float: right;
+    font-family: '"BYekan"';
+    text-align: justify;
+}
+
+/* =============================================================================
+   About Styles
+   ========================================================================== */
+
+
+
+/* =============================================================================
+   Services Styles
+   ========================================================================== */
+#services.div-content {
+    margin-top: 500px;
+}
+
+#services .div-content-row .div-workdesc {
+    float: left;
+    width: 27%;
+    height: 190px;
+}
+
+#services .div-content-row .div-workdesc h5 {
+    padding-top: 15px;
+    font-weight: 900;
+    font-size: 14px;
+    text-transform: uppercase;
+    border-bottom: 1px solid #0083ce;
+    padding-bottom: 5px;
+}
+
+#services .div-content-row .div-workdesc h5 span {
+    background-color: #0083ce;
+    color: White;
+    padding: 0 2px 0 2px;
+}
+
+#services .div-content-row .div-workdesc p {
+    text-align: justify;
+    padding-bottom: 10px;
+    font-family: '"BYekan"';
+}
+
+#services .div-content-row .div-workdesc ul {
+    list-style-type: square;
+    list-style-position: inside;
+    padding-top: 5px;
+    color: #0083ce;
+}
+
+#services .div-content-row .div-workdesc ul li span {
+    color: #1D1D1D;
+}
+
+#services .div-content-row .mini-row {
+    width: 960px;
+    height: 1px;
+    background-color: #0083ce;
+    float: left;
+    margin-top: 205px;
+    position: absolute;
+    z-index: 99;
+}
+
+#services .div-content-row .div-workballs {
+    float: right;
+    width: 560px;
+    margin-left: 40px;
+}
+
+#services .div-content-row .div-workballs ul {
+    float: left;
+}
+
+#services .div-content-row .div-workballs ul li {
+    float: left;
+    color: White;
+    text-transform: uppercase;
+    font-weight: 900;
+    padding-top: 40px;
+    text-align: center;
+    width: 100px;
+    height: 60px;
+    cursor: pointer;
+    background-color: #1d1d1d;
+    -webkit-border-radius: 999px;
+    -moz-border-radius: 999px;
+    border-radius: 999px;
+    transition: background-color 0.3s ease-in-out;
+    -moz-transition: background-color 0.3s ease-in-out;
+    -webkit-transition: background-color 0.3s ease-in-out;
+    -o-transition: background-color 0.3s ease-in-out;
+}
+
+#services .div-content-row .div-workballs ul li.hovereffect {
+    background-color: #0083ce;
+}
+
+#services .div-content-row .div-workballs ul li.arrow {
+    margin-top: 40px;
+    margin-right: 5px;
+    width: 10px;
+    height: 12px;
+    padding: 0;
+    background-color: Transparent;
+    background-image: url('img/services-arrows.png');
+    background-position: -14px;
+    -webkit-border-radius: 0px;
+    -moz-border-radius: 0px;
+    border-radius: 0px;
+}
+
+/* =============================================================================
+   Services Styles
+   ========================================================================== */
+
+
+
+/* =============================================================================
+   Portfolio Styles
+   ========================================================================== */
+#portfolio {}
+
+#portfolio.div-content {
+    margin-top: 500px;
+}
+
+#portfolio h4 {
+    font-size: 12px;
+    letter-spacing: 1px;
+    padding-left: 20px;
+    float: right;
+    margin: 0;
+    margin-top: 30px;
+}
+
+#portfolio .filter {
+    float: right;
+    margin-top: 30px;
+}
+
+#portfolio .filter li {
+    float: right;
+    margin-left: 10px;
+}
+
+#portfolio .filter a {
+    text-decoration: none;
+    color: #d1d1d1;
+    font-style: italic;
+    transition: color 0.3s ease-in-out;
+    -moz-transition: color 0.3s ease-in-out;
+    -webkit-transition: color 0.3s ease-in-out;
+    -o-transition: color 0.3s ease-in-out;
+}
+
+#portfolio .filter a:hover {
+    text-decoration: underline;
+    color: #0083ce;
+}
+
+#portfolio .filter li.current a {
+    text-decoration: underline;
+    color: #0083ce;
+}
+
+#portfolio .portfolio {
+    width: 100%;
+    float: right;
+    margin-top: 20px;
+}
+
+#portfolio .portfolio li {
+    float: right;
+    margin: 5px;
+    width: 232px;
+    height: 132px;
+}
+
+#portfolio .portfolio .li-img {
+    width: 100%;
+    height: 100%;
+}
+
+#portfolio .lb-album li>a,
+#portfolio .lb-album li>a img {
+    display: block;
+}
+
+#portfolio .lb-album li>a {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    text-decoration: none;
+}
+
+#portfolio .lb-album li>a span {
+    position: absolute;
+    width: 232px;
+    height: 80px;
+    top: 0px;
+    text-decoration: none;
+    left: 0px;
+    text-align: center;
+    line-height: 1;
+    padding-top: 52px;
+    color: white;
+    font-weight: 900;
+    font-size: 14px;
+    text-transform: uppercase;
+    opacity: 0;
+    background-image: url('img/portfolio-hover-effect.png');
+    -webkit-transition: opacity 0.3s linear;
+    -moz-transition: opacity 0.3s linear;
+    -o-transition: opacity 0.3s linear;
+    -ms-transition: opacity 0.3s linear;
+    transition: opacity 0.3s linear;
+}
+
+#portfolio .lb-album li>a span small {
+    text-transform: capitalize;
+    font-style: italic;
+    font-weight: 400;
+}
+
+#portfolio .lb-album li>a:hover span {
+    opacity: 1;
+    filter: alpha(opacity=99);
+    /* internet explorer */
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(opacity=99)";
+    /*IE8*/
+}
+
+#portfolio .lb-overlay {
+    width: 0px;
+    height: 0px;
+    position: fixed;
+    overflow: hidden;
+    left: 0px;
+    top: 0px;
+    padding: 0px;
+    z-index: 999999;
+    text-align: center;
+    /* IE9 SVG, needs conditional override of 'filter' to 'none' */
+    background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iI2ZmZmZmZiIgc3RvcC1vcGFjaXR5PSIwLjk1Ii8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiNmZmZmZmYiIHN0b3Atb3BhY2l0eT0iMC45NSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
+    background: -moz-linear-gradient(top, rgba(255, 255, 255, 0.95) 0%, rgba(255, 255, 255, 0.95) 100%);
+    /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, rgba(255, 255, 255, 0.95)), color-stop(100%, rgba(255, 255, 255, 0.95)));
+    /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top, rgba(255, 255, 255, 0.95) 0%, rgba(255, 255, 255, 0.95) 100%);
+    /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top, rgba(255, 255, 255, 0.95) 0%, rgba(255, 255, 255, 0.95) 100%);
+    /* Opera 11.10+ */
+    background: -ms-linear-gradient(top, rgba(255, 255, 255, 0.95) 0%, rgba(255, 255, 255, 0.95) 100%);
+    /* IE10+ */
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 0.95) 0%, rgba(255, 255, 255, 0.95) 100%);
+    /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#f2ffffff', endColorstr='#f2ffffff', GradientType=0);
+    /* IE6-8 */
+}
+
+#portfolio .lb-overlay-wrapper {
+    width: 970px !important;
+    margin: auto !important;
+}
+
+#portfolio .lb-overlay-wrapper div {
+    width: 362px;
+    float: right;
+}
+
+#portfolio .lb-overlay>div {
+    position: relative;
+    width: 550px;
+    margin: 10px auto 0px auto;
+    -webkit-transition: opacity 0.1s linear 1.3s;
+    -moz-transition: opacity 0.1s linear 1.3s;
+    -o-transition: opacity 0.1s linear 1.3s;
+    -ms-transition: opacity 0.1s linear 0.5s;
+    transition: opacity 0.1s linear 0.5s;
+}
+
+#portfolio .lb-overlay div h3,
+#portfolio .lb-overlay div p {
+    padding: 0px 20px;
+    width: 330px;
+    margin-top: 30px;
+}
+
+#portfolio .lb-overlay div h3 {
+    font-size: 28px;
+    width: 330px;
+    font-weight: 900;
+    float: right;
+    text-align: right;
+    color: #0083ce;
+    text-transform: capitalize;
+    line-height: 18px;
+    margin-top: 0;
+}
+
+#portfolio .lb-overlay div h3 small {
+    font-size: 14px;
+    font-weight: 200;
+    font-style: italic;
+}
+
+#portfolio .lb-overlay div h3 span,
+#portfolio .lb-overlay div p {
+    margin-left: 20px;
+    border-right: 1px solid #0083ce;
+    text-align: justify;
+    float: right;
+    width: 319px;
+    padding-left: 10px;
+    font-size: 12px;
+}
+
+#portfolio .lb-overlay div h3 span {
+    display: block;
+    line-height: 6px;
+}
+
+#portfolio .lb-overlay div p {
+    margin-right: 20px;
+    border-right: 1px solid #0083ce;
+    text-align: justify;
+    float: right;
+}
+
+#portfolio .lb-overlay a.lb-close {
+    background-color: #1D1D1D;
+    z-index: 1001;
+    color: white;
+    position: absolute;
+    top: 0;
+    right: 5px;
+    font-size: 15px;
+    line-height: 26px;
+    text-align: center;
+    overflow: hidden;
+    margin-left: -25px;
+    font-weight: 900;
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 0 8px 0 8px;
+}
+
+#portfolio .lb-overlay img {
+    max-height: 100%;
+    max-width: 600px;
+    position: relative;
+    -webkit-box-shadow: 0px 0px 1px #333;
+    -moz-box-shadow: 0px 0px 1px #333333;
+    box-shadow: 0px 0px 1px #333;
+    border: 1px solid White;
+}
+
+#portfolio .lb-overlay:target {
+    width: auto;
+    height: auto;
+    bottom: 0px;
+    right: 0px;
+    padding: 80px 100px 120px 100px;
+}
+
+#portfolio .lb-overlay:target img {
+    float: right;
+}
+
+#portfolio .lb-overlay:target iframe {
+    float: left;
+}
+
+#portfolio .lb-overlay:target a.lb-close,
+#portfolio .lb-overlay:target>div {
+    opacity: 1;
+    filter: alpha(opacity=99);
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(opacity=99)";
+}
+
+#portfolio .lb-overlay .overlay-link {
+    float: right;
+    padding: 5px;
+    margin-right: 15px;
+    margin-top: 25px;
+}
+
+#portfolio .lb-overlay .overlay-link:hover span {
+    color: #0083ce;
+}
+
+#portfolio .lb-overlay .overlay-link:hover .arrow {
+    background-position: 0px;
+}
+
+
+#portfolio .lb-overlay .overlay-link span {
+    float: left;
+    text-decoration: none;
+    color: #1d1d1d;
+    font-weight: 600;
+    font-style: italic;
+    transition: color 0.3s ease-in-out;
+    -moz-transition: color 0.3s ease-in-out;
+    -webkit-transition: color 0.3s ease-in-out;
+    -o-transition: color 0.3s ease-in-out;
+}
+
+#portfolio .lb-overlay .overlay-link .arrow {
+    float: left;
+    width: 10px;
+    height: 12px;
+    padding: 0;
+    background-color: transparent;
+    background-image: url('img/services-arrows.png');
+    background-position: -14px;
+    transition: background-position 0.3s ease-in-out;
+    -moz-transition: background-position 0.3s ease-in-out;
+    -webkit-transition: background-position 0.3s ease-in-out;
+    -o-transition: background-position 0.3s ease-in-out;
+    -webkit-border-radius: 0px;
+    -moz-border-radius: 0px;
+    border-radius: 0px;
+    margin-top: 4px;
+}
+
+#portfolio x:-o-prefocus,
+.lb-overlay img {
+    height: 100%;
+}
+
+#portfolio .ul-clients {
+    float: left;
+    width: 100%;
+}
+
+#portfolio .ul-clients li {
+    float: left;
+    opacity: 0.2;
+    margin: 5px;
+    transition: opacity 0.3s ease-in-out;
+    -moz-transition: opacity 0.3s ease-in-out;
+    -webkit-transition: opacity 0.3s ease-in-out;
+    -o-transition: opacity 0.3s ease-in-out;
+}
+
+#portfolio .ul-clients li:hover {
+    opacity: 1;
+}
+
+#portfolio .ul-clients li a img {}
+
+/* =============================================================================
+   Portfolio Styles
+   ========================================================================== */
+
+
+
+
+
+
+/* =============================================================================
+   Contact Styles
+   ========================================================================== */
+
+#contact.div-content {
+    margin-top: 500px;
+}
+
+
+#map_canvas {
+    height: 385px;
+    width: 100%;
+}
+
+
+#contact .contact-info {
+    float: left;
+    width: 285px;
+}
+
+#contact .contact-info p {
+    margin: 0;
+}
+
+#contact .contact-info h4 {
+    margin-bottom: 10px;
+}
+
+
+
+
+#contact .contact-form {
+    float: right;
+    width: 580px;
+}
+
+#contact p {
+    text-align: justify;
+    margin: 10px 0px 10px 0px;
+    line-height: 1.5;
+}
+
+#contact .contact-form h4 {
+    margin-bottom: 10px;
+}
+
+#contact .contact-form label {
+    display: block;
+    margin: 10px 0px 0px 0px;
+}
+
+#contact .contact-form li:first-child label {
+    margin: 0;
+}
+
+#contact .contact-form input[type="text"],
+input[type="email"],
+input[type="password"] {
+    width: 300px;
+}
+
+#contact .contact-form input[name="subject"] {
+    width: 96%;
+}
+
+#contact .contact-form textarea {
+    width: 96%;
+    height: 100px;
+    margin-top: 10px;
+}
+
+#contact .contact-form input[type="submit"] {
+    border: 0;
+    float: right;
+    font-family: '"BYekan"';
+    background-color: #1D1D1D;
+    padding: 5px 20px 5px 20px;
+    color: white;
+    margin-top: 20px;
+}
+
+
+#contact .contact-form input[type="submit"]:hover {
+    transition: background 0.3s ease-in-out;
+    -moz-transition: background 0.3s ease-in-out;
+    -webkit-transition: background 0.3s ease-in-out;
+    -o-transition: background 0.3s ease-in-out;
+    background: #353535;
+}
+
+.contact-social {
+    list-style-type: none;
+    float: left;
+    margin: 0;
+    padding: 5px 0 0 0;
+}
+
+.contact-social li {
+    float: left;
+    margin-right: 2px;
+}
+
+.contact-social li .btn {
+    display: block;
+    height: 32px;
+    width: 32px;
+    background-image: url('img/social-sprite.png');
+    transition: opacity 0.3s ease-in-out;
+    -moz-transition: opacity 0.3s ease-in-out;
+    -webkit-transition: opacity 0.3s ease-in-out;
+    -o-transition: opacity 0.3s ease-in-out;
+}
+
+.contact-social li .btn:hover {
+    opacity: 0.7;
+}
+
+.contact-social li .fb {
+    background-position: 0px;
+}
+
+.contact-social li .twt {
+    background-position: -33px;
+}
+
+.contact-social li .lkdin {
+    background-position: -66px;
+}
+
+.contact-social li .drbble {
+    background-position: -99px;
+}
+
+.contact-social li .cv {
+    background-position: -133px;
+}
+
+.form-line {
+    height: 100%;
+    overflow: hidden;
+    margin-bottom: 10px;
+    float: right;
+}
+
+.buttonsend {
+    float: right;
+    padding: 8px 20px 8px 20px;
+    border: solid 1px #343434;
+}
+
+.buttonsend:hover {
+    color: #D75902;
+    border-color: #D75902;
+    text-decoration: none;
+}
+
+/* =============================================================================
+   Contact Styles
+   ========================================================================== */
+
+
+
+
+/* =============================================================================
+   Footer Styles
+   ========================================================================== */
+
+footer {
+    float: left;
+    padding: 5px 10px 5px 10px;
+    width: 98%;
+    margin-top: 160px;
+    color: #818181;
+    border-top: 1px solid #E1E1E1;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+footer .footer-info {
+    width: 50%;
+    float: left;
+    text-align: left;
+}
+
+
+footer .footer-info a {
+    color: #818181;
+    transition: color 0.3s ease-in-out;
+    -moz-transition: color 0.3s ease-in-out;
+    -webkit-transition: color 0.3s ease-in-out;
+    -o-transition: color 0.3s ease-in-out;
+}
+
+footer .footer-info a:hover {
+    color: #0083ce;
+    text-decoration: none;
+}
+
+
+
+footer .footer-menu {
+    float: right;
+}
+
+footer .footer-menu li {
+    float: right;
+    list-style-type: none;
+    text-align: right;
+    margin-left: 10px;
+}
+
+footer .footer-menu li a {
+    color: #818181;
+    text-transform: capitalize;
+    transition: color 0.3s ease-in-out;
+    -moz-transition: color 0.3s ease-in-out;
+    -webkit-transition: color 0.3s ease-in-out;
+    -o-transition: color 0.3s ease-in-out;
+}
+
+footer .footer-menu li a:hover {
+    color: #0083ce;
+    text-decoration: none;
+}
+
+/* =============================================================================
+   Footer Styles
+   ========================================================================== */
+div.wpcf7 img.ajax-loader {
+    margin: 25px 10px;
+}
