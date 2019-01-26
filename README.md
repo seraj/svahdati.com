@@ -1,1 +1,2 @@
-# Seraj.me && Svahdati.com
+# Seraj.me
+my Personal Website
